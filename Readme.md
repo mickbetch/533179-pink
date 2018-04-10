@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Провалинский](https://up.htmlacademy.ru/adaptive/14/user/533179).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Прокопеня] (https://htmlacademy.ru/profile/sera_prokop).
 
 ---
 
