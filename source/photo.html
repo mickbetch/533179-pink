@@ -143,20 +143,29 @@
 
       <section class="page-main__app app">
         <h2 class="visually-hidden">Оцените наше приложение в действии</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="app__view">
-            <img src="http://placehold.it/150x100" alt="Попробуйте в действии наше приложение">
+        <form class="app__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="app__img-wrapper">
+            <img class="app__img" src="http://placehold.it/150x100" alt="Попробуйте в действии наше приложение">
           </p>
-          <div class="app__action">
-            <button class="app__button--crop" type="button">обрезать фото</button>
-            <button class="app__button--fill" type="button">изменить насыщенность</button>
-            <button class="app__contrast" type="button">изменить контраст</button>
+          <div class="app__action action">
+            <button class="action__button action__button--crop" type="button">
+              обрезать фото
+              <img src="http://placehold.it/150x100" alt="обрезать">
+            </button>
+            <button class="action__button action__button--fill" type="button">
+              изменить насыщенность
+              <img src="http://placehold.it/150x100" alt="изменить насыщенность">
+            </button>
+            <button class="action__button action__button--contrast" type="button">
+              изменить контраст
+              <img src="http://placehold.it/150x100" alt="изменить контраст">
+            </button>
           </div>
-          <p class="app__range">
-            <input type="range">
+          <p class="app__range-wrapper">
+            <input class="app__range" type="range">
           </p>
-          <button class="app__button--post button" type="button">Запостить</button>
-          <button class="app__button--reset button" type="button">Отмена</button>
+          <button class="app__button app__button--post button" type="button">Запостить</button>
+          <button class="app__button app__button--reset button" type="button">Отмена</button>
         </form>
       </section>
 
