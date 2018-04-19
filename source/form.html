@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк-фотографии</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -16,16 +18,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
+              <a class="site-list__link">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__link" href="htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -118,9 +120,9 @@
               </textarea>
             </p>
           </fieldset>
-          <input class="button button--submit" type="submit" value="Отправить форму">
+          <input class="form__button button button--submit" type="submit" value="Отправить форму">
           <p class="form__required-item">
-            <sup>*</sup> — обязательные поля
+            <sup class="form__small-item">*</sup> — обязательные поля
           </p>
         </form>
       </section>

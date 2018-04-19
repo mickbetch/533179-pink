@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -14,16 +16,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
       </nav>
@@ -36,7 +38,7 @@
       <section class="page-main__device device">
         <h2 class="visually-hidden">Скачивайте наше приложение</h2>
         <p class="device__img-wrapper">
-          <img class="device__img" src="http://placehold.it/150x100" alt="Главное изображение сайта">
+          <img class="device__img" src="img/iphone-hand-mobile@1x.png" width="320" height="396" alt="Главное изображение сайта">
         </p>
         <button class="device__button button button--load" type="button">Скачать приложение</button>
         <ul class="device-list">
@@ -84,7 +86,7 @@
           </li>
         </ul>
         <p class="advantages__img-wrapper">
-          <img class="advantages__img" src="http://placehold.it/150x100" alt="изображение разедела преимуществ">
+          <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="изображение разедела преимуществ">
         </p>
 
       </section>
@@ -126,9 +128,9 @@
           <h2 class="visually-hidden">Наш прайс-лист</h2>
           <table class="price__list slider__list">
             <tr>
-              <td class="price__item"><span>Стандарт</span><span>3,99 USD</span></td>
-              <td class="price__item"><span>Стандарт</span><span>3,99 USD</span></td>
-              <td class="price__item"><span>Стандарт</span><span>3,99 USD</span></td>
+              <td class="price__item--head"><span class="price__item--title">Стандарт</span><span class="price__item--price">3,99 USD</span></td>
+              <td class="price__item--head"><span class="price__item--title">Стандарт</span><span class="price__item--price">3,99 USD</span></td>
+              <td class="price__item--head"><span class="price__item--title">Стандарт</span><span class="price__item--price">3,99 USD</span></td>
             </tr>
             <tr>
               <td class="price__item">Розовый фильтр</td>
