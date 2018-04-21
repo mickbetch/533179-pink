@@ -1,3 +1,33 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+
   background-color: #283645;
+}
+
+.page-header___logo-link {
+  height: 70px;
+  color: #ffffff;
+}
+.main-nav {
+  min-height: 256px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header___logo-link {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Временные стили */
+.page-header___logo-link,
+.main-nav {
+  outline: 2px solid red;
 }
