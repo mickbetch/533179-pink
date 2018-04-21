@@ -4,10 +4,30 @@
 
   margin: 0;
   margin-bottom: 23px;
-  padding: 0 37px;
+  margin-left: 36px;
+  padding: 0;
+
+  width: 205px;
   list-style: none;
+
+  /*Временные стили*/
+  outline: 2px solid red;
 }
 
 .device-list__link {
   text-decoration: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .device-list {
+    margin-bottom: 35px;
+    margin-left: 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .device-list {
+    margin-bottom: 58px;
+  }
 }
