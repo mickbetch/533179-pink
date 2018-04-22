@@ -3,22 +3,64 @@
 }
 
 .price__item {
-  text-transform: uppercase;
   line-height: 30px;
 
-  &--head {
-    background-color: #283645;
-  }
+  text-transform: uppercase;
+}
+
+.price__item--head {
+  background-color: #283645;
+  text-align: center;
+}
+
+.price__item-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;:
+}
+
+/*
+
+
+
 
   &--title {
+    display: block;
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
   }
 
   &--price {
+    display: block;
     font-size: 24px;
     font-weight: 300;
     color: #ffffff;
   }
 }
+
+.price__visible {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .price__wrapper {
+    width: 620px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .price__list {
+    width: 620px;
+  }
+
+  .price__item {
+    width: 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
+*/
