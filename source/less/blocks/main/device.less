@@ -1,5 +1,5 @@
 .device {
-  min-height: 638px;
+  min-height: 668px;
   background-color: #1d2631;
 }
 
@@ -11,11 +11,16 @@
 
 .device__img-wrapper {
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
 
   height: 395px;
 
   background-image: url("../../../img/bg-back-mobile@1x.jpg");
+}
+
+.device__title {
+  display: none;
 }
 
 .device__button {
@@ -35,14 +40,14 @@
 
   background-color: transparent;
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 .device__text {
-  width: 280px;
 
   margin: 0;
-  padding: 0 20px;
+  padding: 0 25px;
+  padding-bottom: 32px;
 
   font-weight: 300;
   text-align: center;
@@ -62,11 +67,38 @@
   }
 
   .device__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     width: 620px;
+  }
+
+  .device__column {
+    width: 300px;
+  }
+
+  .device__title {
+    display: block;
+
+    width: 200px;
+
+    margin: 0 auto;
+    margin-top: 93px;
+    margin-bottom: 35px;
+    padding: 0;
+
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+
+    color: #ffffff;
   }
 
   .device__button {
     width: 300px;
+
+    margin-bottom: 46px;
   }
 
   .device__text {
@@ -86,7 +118,19 @@
     padding: 0 10px;
   }
 
+  .device__title {
+    width: 235px;
+
+    margin-top: 115px;
+    margin-bottom: 57px;
+
+    font-size: 50px;
+    line-height: 50px;
+  }
+
   .device__button {
     margin-bottom: 67px;
+
+    font-size: 21px;
   }
 }
