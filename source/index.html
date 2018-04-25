@@ -123,43 +123,47 @@
       <section class="reviews reviews__slider">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__wrapper">
+          <input class="reviews__radio reviews__radio--first" id="review-1" type="radio" name="review" checked>
+          <input class="reviews__radio reviews__radio--second" id="review-2" type="radio" name="review">
+          <input class="reviews__radio reviews__radio--third" id="review-3" type="radio" name="review">
           <div class="reviews__slider-controls">
-            <i class="reviews__control reviews__control--active"></i>
-            <i class="reviews__control"></i>
-            <i class="reviews__control"></i>
+            <label class="reviews__control reviews__control--first" for="review-1"></label>
+            <label class="reviews__control reviews__control--second" for="review-2"></label>
+            <label class="reviews__control reviews__control--third" for="review-3"></label>
           </div>
-          <ul class="reviews__list">
-            <li class="reviews__item reviews__item--first">
-              <span class="reviews__age-occupation">25 лет, водитель трамвая</span>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-            <li class="reviews__item reviews__item--second">
-              <span class="reviews__age-occupation">25 лет, водитель трамвая</span>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-            <li class="reviews__item reviews__item--third">
-              <span class="reviews__age-occupation">25 лет, водитель трамвая</span>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-          </ul>
+          <div class="reviews__inner">
+            <ul class="reviews__list">
+              <li class="reviews__item reviews__item--first">
+                <span class="reviews__age-occupation">25 лет, водитель трамвая</span>
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+              <li class="reviews__item reviews__item--second">
+                <span class="reviews__age-occupation">25 лет, водитель трамвая</span>
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+              <li class="reviews__item reviews__item--third">
+                <span class="reviews__age-occupation">25 лет, водитель трамвая</span>
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-          <p class="reviews__toggles">
+          <!--<p class="reviews__toggles">
             <button class="reviews__toggle" type="button">1</button>
             <button class="reviews__toggle" type="button">2</button>
             <button class="review__toggle" type="button">3</button>
-          </p>
-        </div>
-
+          </p>-->
       </section>
+
 
       <section class="price">
         <div class="price__wrapper slider">
