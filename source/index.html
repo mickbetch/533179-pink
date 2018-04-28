@@ -165,77 +165,140 @@
       </section>
 
 
-      <section class="price">
-        <div class="price__wrapper slider">
-          <h2 class="visually-hidden">Наш прайс-лист</h2>
-          <table class="price__list slider__list">
-            <tr>
-              <td class="price__item price__item--empty"></td>
-              <td class="price__item price__item--head">
-                <span class="price__item-title">База</span>
-                <span class="price__item-price">1,99 USD</span>
-              </td>
-              <td class="price__item price__item--head">
-                <span class="price__item-title">Стандарт</span>
-                <span class="price__item-price">3,99 USD</span>
-              </td>
-              <td class="price__item price__item--head">
-                <span class="price__item-title">Анлим</span>
-                <span class="price__item-price">9,99 USD</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--name">Розовый фильтр</td>
-              <td class="price__item"></td>
-              <td class="price__item">
-                <span class="price__visible">Розовый фильтр</span>
-              </td>
-              <td class="price__item"></td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--name">Смайлики</td>
-              <td class="price__item"></td>
-              <td class="price__item">
-                <span class="price__visible">Смайлики</span>
-              </td>
-              <td class="price__item"></td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--name">Комментарии</td>
-              <td class="price__item"></td>
-              <td class="price__item">
-                <span class="price__visible">Комментарии</span>
-              </td>
-              <td class="price__item"></td>
-            </tr>
-          </table>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+      <section class="price price__slider">
+        <h2 class="visually-hidden">Наш прайс-лист</h2>
+        <div class="price__wrapper">
+          <input class="price__radio price__radio--first" id="price-1" type="radio" name="price" checked>
+          <input class="price__radio price__radio--second" id="price-2" type="radio" name="price">
+          <input class="price__radio price__radio--third" id="price-3" type="radio" name="price">
+          <div class="price__slider-controls">
+            <label class="price__control price__control--first" for="price-1"></label>
+            <label class="price__control price__control--second" for="price-2"></label>
+            <label class="price__control price__control--third" for="price-3"></label>
+          </div>
+          <div class="price__inner">
+            <table class="price__list">
+              <col class="price__col price__col--first">
+              <col class="price__col price__col--second">
+              <col class="price__col price__col--third">
+              <col class="price__col price__col--fourth">
+              <tr>
+                <td class="price__item price__item--empty"></td>
+                <td class="price__item price__item--head">
+                  <span class="price__item-title">База</span>
+                  <span class="price__item-price">1,99 USD</span>
+                </td>
+                <td class="price__item price__item--head">
+                  <span class="price__item-title">Стандарт</span>
+                  <span class="price__item-price">3,99 USD</span>
+                </td>
+                <td class="price__item price__item--head">
+                  <span class="price__item-title">Анлим</span>
+                  <span class="price__item-price">9,99 USD</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__item price__item--name">Розовый фильтр</td>
+                <td class="price__item">
+                  <span class="price__visible">Розовый фильтр</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__visible">Розовый фильтр</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__visible">Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__item price__item--name">Смайлики</td>
+                <td class="price__item">
+                  <span class="price__visible">Смайлики</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__visible">Смайлики</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__visible">Смайлики</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__item price__item--name">Комментарии</td>
+                <td class="price__item">
+                  <span class="price__visible">Комментарии</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__visible">Комментарии</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__visible">Комментарии</span>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__write-us">
+            Остались вопросы? Свяжитесь с нами!
+          </p>
+          <div class="contacts__list">
+            <p class="contacts__text">
+              <span class="contacts__text-title">Звоните:</span>
+              <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</a>
+            </p>
+            <p class="contacts__text">
+              <span class="contacts__text-title">Пишите:</span>
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="contacts__text">
+              <span class="contacts__text-title">Приезжайте в гости:</span>
+              <span class="contacts__adress">ул. Большая Конюшенная, 19/8</span>
+            </p>
+          </div>
+
+        </div>
+        <p class="contacts__map">
+            <img class="contacts__img" src="img/bg-map-mobile@1x.png" alt="Наше расположение на карте">
+          </p>
+      </section>
+
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__write-us">
-        Остались вопросы? Свяжитесь с нами!
+      <p class="page-footer__logo">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-img" src="http://placehold.it/150x100" alt="Логотип">
+        </a>
       </p>
-      <div class="contacts">
-        <p class="contacts__text">
-          Звоните: <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__text">
-          Пишите: <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__text">
-          Приезжайте в гости:<span class="contacts__adress">ул. Большая Конюшенная, 19/8</span>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="#">
+              твиттер
+              <img src="http://placehold.it/150x100" alt="твиттер">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
+              фейсбук
+              <img src="http://placehold.it/150x100" alt="фейсбук">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ytb" href="#">
+              ютуб
+              <img src="http://placehold.it/150x100" alt="ютуб">
+            </a>
+          </li>
+        </ul>
+        <p class="social__develop">Разработано
+          <a class="social__develop-link" href="htmlacademy.ru">
+            <img class="social__develop-img" src="http://placehold.it/150x100" alt="Ссылка на страниу разработчика htmlcacdemy.ru">
+          </a>
         </p>
       </div>
-      <p class="page-footer_map map">
-        <img class="map__img" src="http://placehold.it/150x100" alt="Наше расположение на карте">
-      </p>
     </footer>
 </body>
 </html>
