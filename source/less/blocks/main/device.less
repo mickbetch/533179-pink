@@ -3,12 +3,6 @@
   background-color: #1d2631;
 }
 
-.device__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .device__img-wrapper {
   margin: 0;
   margin-bottom: 28px;
@@ -64,11 +58,10 @@
     min-height: 619px;
   }
 
-  .device__wrapper {
+  .container--device {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 620px;
   }
 
   .device__column {
@@ -110,11 +103,6 @@
 @media (min-width: @desktop-width) {
   .device {
     min-height: 743px;
-  }
-
-  .device__wrapper {
-    width: 940px;
-    padding: 0 10px;
   }
 
   .device__title {
