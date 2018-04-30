@@ -11,7 +11,7 @@
 
     <header class="page-header">
       <div class="container container--page-header">
-        <a class="page-header___logo-link">
+        <a class="page-header___logo-link" href="index.html">
           <span class="page-header__logo-title">PINK</span>
         </a>
         <nav class="main-nav">
@@ -42,106 +42,112 @@
         </div>
       </div>
 
-      <section class="page-main__photos photos">
+      <section class="photos">
         <h2 class="visually-hidden">Последние добавленные фотографии</h2>
-        <div class="container">
-          <p class="photos__text photos__text--top">
-            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-          </p>
-          <div class="photos__article photo">
-            <p class="photo__view">
-              <span class="photo__title">Панорама дня</span>
-              <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-            </p>
-            <blockquote class="photo__content">
-              <cite class="photo__author-name">Анна</cite>
-              <span class="photo__time">(5 минут назад)</span>
-              <p class="photo__comment">
+
+        <p class="photos__text photos__text--top">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+        <div class="photos__article">
+          <a class="photos__link photos__link--panorama">
+            <img class="photos__img photos__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+          </a>
+          <div class="container container--photo">
+            <blockquote class="photos__content comment comment--panorama">
+              <cite class="comment__author">Анна</cite>
+              <span class="comment__time">(5 минут назад)</span>
+              <p class="comment__text">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            </p>
-            <span class="photo__like">Нравится: 215</span>
-          </blockquote>
+              </p>
+              <p class="comment__like"> Нравится: 215</p>
+            </blockquote>
+          </div>
         </div>
-        <div class="photos__article photo">
-          <p class="photo__view">
-            <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__author-name">Левон</cite>
-            <span class="photo__time">(5 часов назад)</span>
-            <p class="photo__comment">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <span class="photo__like">Нравится: 356</span>
-          </blockquote>
-        </div>
-        <div class="photos__article photo">
-          <p class="photo__view">
-            <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__author-name">Антон</cite>
-            <span class="photo__time">(12 часов назад)</span>
-            <p class="photo__comment">
-              Соседи будут рады!
-            </p>
-            <span class="photo__like">Нравится: 666</span>
-          </blockquote>
-        </div>
-        <div class="photos__article photo">
-          <p class="photo__view">
-            <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__author-name">Борис</cite>
-            <span class="photo__time">(20 часов назад)</span>
-            <p class="photo__comment">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <span class="photo__like">Нравится: 215</span>
-          </blockquote>
-        </div>
-        <div class="photos__article photo">
-          <p class="photo__view">
-            <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__author-name">Сергей</cite>
-            <span class="photo__time">(25 часов назад)</span>
-            <p class="photo__comment">
-              Самая кубанская в мире!
-            </p>
-            <span class="photo__like">Нравится: 4</span>
-          </blockquote>
-        </div>
-        <div class="photos__article photo">
-          <p class="photo__view">
-            <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__author-name">Максим</cite>
-            <span class="photo__time">(40 часов назад)</span>
-            <p class="photo__comment">
-              Где снег-то?
-            </p>
-            <span class="photo__like">Нравится: 150</span>
-          </blockquote>
-        </div>
-        <div class="photos__article photo">
-          <p class="photo__view">
-            <img class="photo__img" src="http://placehold.it/150x100" alt="Панорама дня">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__author-name">Надежда</cite>
-            <span class="photo__time">(45 часов назад)</span>
-            <p class="photo__comment">
-              Всем GM и взаимные лайки!
-            </p>
-            <span class="photo__like">Нравится: 2560</span>
-          </blockquote>
+        <div class="container">
+          <ul class="photos__list">
+            <li class="photos__item">
+              <a class="photos__link">
+                <img class="photos__img" src="img/photo-car-mobile@1x.jpg" alt="Панорама дня">
+              </a>
+              <blockquote class="photos__content comment">
+                <cite class="comment__author">Левон</cite>
+                <span class="comment__time">(5 часов назад)</span>
+                <p class="comment__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <p class="comment__like">Нравится: 356</p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link">
+                <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня">
+              </a>
+              <blockquote class="photos__content comment">
+                <cite class="comment__author">Антон</cite>
+                <span class="comment__time">(12 часов назад)</span>
+                <p class="comment__text">
+                  Соседи будут рады!
+                </p>
+                <p class="comment__like">Нравится: 666</p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link">
+                <img class="photos__img" src="img/photo-window-mobile@1x.jpg" alt="Панорама дня">
+              </a>
+              <blockquote class="photos__content comment">
+                <cite class="comment__author">Борис</cite>
+                <span class="comment__time">(20 часов назад)</span>
+                <p class="comment__text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <p class="comment__like">Нравится: 215</p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link">
+                <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня">
+              </a>
+              <blockquote class="photos__content comment">
+                <cite class="comment__author">Сергей</cite>
+                <span class="comment__time">(25 часов назад)</span>
+                <p class="comment__text">
+                  Самая кубанская в мире!
+                </p>
+                <p class="comment__like">Нравится: 4</p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link">
+                <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня">
+              </a>
+              <blockquote class="photos__content comment">
+                <cite class="comment__author">Максим</cite>
+                <span class="comment__time">(40 часов назад)</span>
+                <p class="comment__text">
+                  Где снег-то?
+                </p>
+                <p class="comment__like">Нравится: 150</p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link">
+                <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" alt="Панорама дня">
+              </a>
+              <blockquote class="photos__content comment">
+                <cite class="comment__author">Надежда</cite>
+                <span class="comment__time">(45 часов назад)</span>
+                <p class="comment__text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <p class="comment__like">Нравится: 2560</p>
+              </blockquote>
+            </li>
+          </ul>
         </div>
         <p class="photos__text photos__text--bottom">
-          <span class="photos__text-block">Затмите их всех!</span>Выкладывайте все, что накопилось в телефоне!
+          <span class="photos__text photos__text--block">Затмите их всех!</span>
+          Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
 
@@ -176,37 +182,39 @@
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__logo">
-        <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-img" src="http://placehold.it/150x100" alt="Логотип">
-        </a>
-      </p>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#">
-              твиттер
-              <img src="http://placehold.it/150x100" alt="твиттер">
+      <div class="container">
+        <div class="page-footer__social social">
+          <p class="page-footer__logo">
+            <a class="page-footer__logo-link" href="index.html">
+              <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="Логотип">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">
-              фейсбук
-              <img src="http://placehold.it/150x100" alt="фейсбук">
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">
+                твиттер
+                <img src="http://placehold.it/150x100" alt="твиттер">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                фейсбук
+                <img src="http://placehold.it/150x100" alt="фейсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ytb" href="#">
+                ютуб
+                <img src="http://placehold.it/150x100" alt="ютуб">
+              </a>
+            </li>
+          </ul>
+          <p class="social__develop">Разработано
+            <a class="social__develop-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="social__develop-img" src="img/logo-htmlacademy.svg" alt="Ссылка на страниу разработчика htmlcacdemy.ru">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--ytb" href="#">
-              ютуб
-              <img src="http://placehold.it/150x100" alt="ютуб">
-            </a>
-          </li>
-        </ul>
-        <p class="social__develop">Разработано
-          <a class="social__develop-link" href="htmlacademy.ru">
-            <img class="social__develop-img" src="http://placehold.it/150x100" alt="Ссылка на страниу разработчика htmlcacdemy.ru">
-          </a>
-        </p>
+          </p>
+        </div>
       </div>
     </footer>
   </body>
