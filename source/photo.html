@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк-фотографии</title>
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
 
     <header class="page-header">
@@ -36,9 +36,9 @@
 
     <main class="page-main">
 
-      <div class="page-main__title-wrapper">
+      <div class="page-main__title-wrapper page-main__title-wrapper--photo">
         <div class="container">
-          <h1 class="page-main__title">Фотографии пользователей</h1>
+          <h1 class="page-main__title page-main__title--photo">Фотографии пользователей</h1>
         </div>
       </div>
 
@@ -153,30 +153,32 @@
 
       <section class="page-main__app app">
         <h2 class="visually-hidden">Оцените наше приложение в действии</h2>
-        <form class="app__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="app__img-wrapper">
-            <img class="app__img" src="http://placehold.it/150x100" alt="Попробуйте в действии наше приложение">
-          </p>
-          <div class="app__action action">
-            <button class="action__button action__button--crop" type="button">
+        <div class="container">
+          <form class="app__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="app__img-wrapper">
+              <img class="app__img" src="img/photo-road-mobile@1x.jpg" alt="Попробуйте в действии наше приложение">
+            </p>
+            <div class="app__action action">
+              <button class="action__button action__button--crop" type="button">
               обрезать фото
-              <img src="http://placehold.it/150x100" alt="обрезать">
-            </button>
-            <button class="action__button action__button--fill" type="button">
-              изменить насыщенность
-              <img src="http://placehold.it/150x100" alt="изменить насыщенность">
-            </button>
-            <button class="action__button action__button--contrast" type="button">
-              изменить контраст
-              <img src="http://placehold.it/150x100" alt="изменить контраст">
-            </button>
-          </div>
+                <img src="http://placehold.it/150x100" alt="обрезать">
+              </button>
+              <button class="action__button action__button--fill" type="button">
+                изменить насыщенность
+                <img src="http://placehold.it/150x100" alt="изменить насыщенность">
+              </button>
+              <button class="action__button action__button--contrast" type="button">
+                изменить контраст
+                <img src="http://placehold.it/150x100" alt="изменить контраст">
+              </button>
+            </div>
           <p class="app__range-wrapper">
             <input class="app__range" type="range">
           </p>
           <button class="app__button app__button--post button" type="button">Запостить</button>
           <button class="app__button app__button--reset button" type="button">Отмена</button>
-        </form>
+          </form>
+        </div>
       </section>
 
     </main>

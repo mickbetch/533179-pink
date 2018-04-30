@@ -2,20 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк-фотографии</title>
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
 
     <header class="page-header">
-      <a class="page-header___logo-link" href="index.html">
-        <span class="page-header__logo-title">PINK</span>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+      <div class="container container--page-header">
+        <a class="page-header___logo-link" href="index.html">
+          <span class="page-header__logo-title">PINK</span>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -27,16 +27,19 @@
               <a class="site-list__link">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <div class="page-main__title-wrapper">
-        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+      <div class="page-main__title-wrapper page-main__title-wrapper--form">
+        <div class="container">
+          <h1 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </div>
 
       <section class="page-main__contest contest">
