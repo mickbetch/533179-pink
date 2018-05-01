@@ -69,8 +69,8 @@
               </fieldset>
             </div>
 
-            <div class="container container--full">
-              <fieldset class="form__list achieve">
+            <div class="achieve">
+              <fieldset class="form__list achieve__list container">
                 <legend class="achieve__title">Ваши безбашенные достижения в путешествии</legend>
                 <p class="achieve__item">
                   <input class="visually-hidden" id="selfi" type="checkbox">
@@ -112,8 +112,8 @@
               </fieldset>
             </div>
 
-            <div class="container container--full">
-              <fieldset class="form__list app-form">
+            <div class="app-form">
+              <fieldset class="app-form__list container">
                 <legend class="app-form__title">С каким приложением путешествовали?</legend>
                 <p class="app-form__item">
                   <input class="visually-hidden" id="ios" type="radio" name="app-item">
@@ -130,20 +130,22 @@
               </fieldset>
             </div>
 
-            <fieldset class="form__list form__list--emotions">
-              <p class="form__emotions-item">
-                <label for="emotion">Опишите свои эмоции</label>
-                <textarea name="emotion" id="emotion" rows="5">
+            <div class="container">
+              <fieldset class="form__list emotion">
+                <legend class="emotion__title">Опишите свои эмоции</legend>
+                <textarea class="emotion__area" name="emotion" id="emotion" rows="5">
                   Можно прям в красках, не стесняясь в выражениях
                 </textarea>
+              </fieldset>
+            </div>
+
+            <div class="container">
+              <input class="form__button" type="submit" value="Отправить форму">
+              <p class="form__required-item">
+                <sup class="form__small-item">*</sup> — обязательные поля
               </p>
-            </fieldset>
-            <input class="form__button button button--submit" type="submit" value="Отправить форму">
-            <p class="form__required-item">
-              <sup class="form__small-item">*</sup> — обязательные поля
-            </p>
+            </div>
           </form>
-        </div>
       </section>
     </main>
 
