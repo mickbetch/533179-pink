@@ -1,14 +1,14 @@
-.achieve {
+.app-form {
   margin: 0;
   padding: 0;
 
   border: none;
 }
 
-.achieve__title {
+.app-form__title {
   width: 225px;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 
   line-height: 18px;
   color: #d22856;
@@ -17,11 +17,11 @@
   text-align: center;
 }
 
-.achieve__item {
+.app-form__item {
   position: relative;
 
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 36px;
   padding: 0;
   padding-left: 70px;
   padding-top: 7px;
@@ -31,13 +31,14 @@
   line-height: 30px;
 }
 
-.achieve__item label::before {
+.app-form__item label::before,
+.app-form__item label::after {
   content: "";
 
   position: absolute;
 }
 
-.achieve__item input ~ label::before {
+.app-form__item input ~ label::before {
   left: 0;
   top: 0;
 
@@ -47,10 +48,16 @@
 
   background-color: #ffffff;
   border: 2px solid #eeeeee;
+  border-radius: 50%;
 }
 
-.achieve__item input:checked ~ label::before {
-  background-image: url("../../../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.app-form__item input:checked ~ label::after {
+  left: 12px;
+  top: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: #d22856;
+  border-radius: 50%;
 }
