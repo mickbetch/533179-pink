@@ -49,59 +49,69 @@
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             <span class="context__text contest__text--visible">Пожалуйста, заполните форму ниже:</span>
           </p>
+        </div>
 
           <form class=" contest__form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__list form__list--person">
-              <p class="form__person-item">
-                <label for="surname">Фамилия</label>
-                <input name="surname" id="surname" type="text" placeholder="Укажите фамилию *">
-              </p>
-              <p class="form__person-item">
-                <label for="name">Имя</label>
-                <input name="name" id="name" type="text" placeholder="Введите ваше имя *">
-              </p>
-              <p class="form__person-item">
-                <label for="patronymic">Отчество</label>
-                <input name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже  *">
-              </p>
-            </fieldset>
-            <fieldset class="form__list form__list--achievements">
-              <legend class="form__list-title">Ваши безбашенные достижения в путешествии</legend>
-              <p class="form__person-achievements">
-                <input class="visually-hidden" id="selfi" type="checkbox">
-                <label for="selfi">Сделал селфи с акулой</label>
-              </p>
-              <p class="form__person-achievements">
-                <input class="visually-hidden" id="beach" type="checkbox">
-                <label for="beach">Обгорел на пляже</label>
-              </p>
-              <p class="form__person-achievements">
-                <input class="visually-hidden" id="norris" type="checkbox">
-                <label for="norris">Видел Чака Норриса</label>
-              </p>
-              <p class="form__person-achievements">
-                <input class="visually-hidden" id="souvenir" type="checkbox">
-                <label for="souvenir">Накупил сувениров</label>
-              </p>
-              <p class="form__person-achievements">
-                <input class="visually-hidden" id="tower" type="checkbox">
-                <label for="tower">Удержал башню</label>
-              </p>
-              <p class="form__person-achievements">
-                <input class="visually-hidden" id="hotel" type="checkbox">
-                <label for="hotel">Разгромил отель</label>
-              </p>
-            </fieldset>
-            <fieldset class="form__list form__list--contacts">
-              <p class="form__contacts-item">
-                <label for="phone">Номер телефона</label>
-                <input type="tel" id="phone" placeholder="Номер, пожалуйста">
-              </p>
-              <p class="form__contacts-item">
-                <label for="email">Номер телефона</label>
-                <input type="email" id="email" placeholder="Введите почту *" required>
-              </p>
-            </fieldset>
+            <div class="container">
+              <fieldset class="form__list person">
+                <p class="person__item">
+                  <label for="surname">Фамилия</label>
+                  <input name="surname" id="surname" type="text" placeholder="Укажите фамилию *">
+                </p>
+                <p class="person__item">
+                  <label for="name">Имя</label>
+                  <input name="name" id="name" type="text" placeholder="Введите ваше имя *">
+                </p>
+                <p class="person__item">
+                  <label for="patronymic">Отчество</label>
+                  <input name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже  *">
+                </p>
+              </fieldset>
+            </div>
+
+            <div class="container container--full">
+              <fieldset class="form__list achieve">
+                <legend class="achieve__title">Ваши безбашенные достижения в путешествии</legend>
+                <p class="achieve__item">
+                  <input class="visually-hidden" id="selfi" type="checkbox">
+                  <label for="selfi">Сделал селфи с акулой</label>
+                </p>
+                <p class="achieve__item">
+                  <input class="visually-hidden" id="beach" type="checkbox">
+                  <label for="beach">Обгорел на пляже</label>
+                </p>
+                <p class="achieve__item">
+                  <input class="visually-hidden" id="norris" type="checkbox">
+                  <label for="norris">Видел Чака Норриса</label>
+                </p>
+                <p class="achieve__item">
+                  <input class="visually-hidden" id="souvenir" type="checkbox">
+                  <label for="souvenir">Накупил сувениров</label>
+                </p>
+                <p class="achieve__item">
+                  <input class="visually-hidden" id="tower" type="checkbox">
+                  <label for="tower">Удержал башню</label>
+                </p>
+                <p class="achieve__item">
+                  <input class="visually-hidden" id="hotel" type="checkbox">
+                  <label for="hotel">Разгромил отель</label>
+                </p>
+              </fieldset>
+            </div>
+
+            <div class="container">
+              <fieldset class="form__list phone">
+                <p class="phone__item">
+                  <label for="phone">Номер телефона</label>
+                  <input type="tel" id="phone" placeholder="Номер, пожалуйста">
+                </p>
+                <p class="phone__item">
+                  <label for="email">Номер телефона</label>
+                  <input type="email" id="email" placeholder="Введите почту *" required>
+                </p>
+              </fieldset>
+            </div>
+
             <fieldset class="form__list form__list--app">
               <legend class="form__list-title">С каким приложением путешествовали?</legend>
               <p class="form__app-item">
