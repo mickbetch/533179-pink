@@ -26,8 +26,27 @@
   padding: 0;
   line-height: 30px;
   text-transform: uppercase;
+
+  text-align: center;
 }
 
 .form__small-item {
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__button {
+    margin: 0;
+  }
 }

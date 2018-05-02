@@ -51,8 +51,9 @@
           </p>
         </div>
 
-          <form class=" contest__form form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="container">
+          <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
+
+            <div class="person--wrapper container">
               <fieldset class="form__list person">
                 <p class="person__item">
                   <label for="surname">Фамилия</label>
@@ -69,8 +70,8 @@
               </fieldset>
             </div>
 
-            <div class="achieve">
-              <fieldset class="form__list achieve__list container">
+            <div class="achieve container">
+              <fieldset class="form__list achieve__list">
                 <legend class="achieve__title">Ваши безбашенные достижения в путешествии</legend>
                 <p class="achieve__item">
                   <input class="visually-hidden" id="selfi" type="checkbox">
@@ -99,8 +100,9 @@
               </fieldset>
             </div>
 
-            <div class="container">
+            <div class="phone--wrapper container">
               <fieldset class="form__list phone">
+                <legend class="phone__title">Контактная информация</legend>
                 <p class="phone__item">
                   <label for="phone">Номер телефона</label>
                   <input type="tel" id="phone" placeholder="Номер, пожалуйста">
@@ -112,8 +114,8 @@
               </fieldset>
             </div>
 
-            <div class="app-form">
-              <fieldset class="app-form__list container">
+            <div class="app-form container">
+              <fieldset class="app-form__list">
                 <legend class="app-form__title">С каким приложением путешествовали?</legend>
                 <p class="app-form__item">
                   <input class="visually-hidden" id="ios" type="radio" name="app-item">
@@ -130,16 +132,15 @@
               </fieldset>
             </div>
 
-            <div class="container">
-              <fieldset class="form__list emotion">
+            <div class="emotion container">
+              <fieldset class="form__list emotion__list">
                 <legend class="emotion__title">Опишите свои эмоции</legend>
-                <textarea class="emotion__area" name="emotion" id="emotion" rows="5">
-                  Можно прям в красках, не стесняясь в выражениях
+                <textarea class="emotion__area" name="emotion" id="emotion" rows="5">Можно прям в красках, не стесняясь в выражениях
                 </textarea>
               </fieldset>
             </div>
 
-            <div class="container">
+            <div class="container form__submit">
               <input class="form__button" type="submit" value="Отправить форму">
               <p class="form__required-item">
                 <sup class="form__small-item">*</sup> — обязательные поля

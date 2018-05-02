@@ -4,10 +4,6 @@
   padding-bottom: 100px;
 }
 
-.price__container {
-  width: auto;
-}
-
 .price__radio {
   display: none;
 }
@@ -45,35 +41,53 @@
   background-color: #ffffff;
   border: 3px solid #313f4d;
 }
-
-.price__col {
-  width: 280px;
-
-  &--first {
-    display: none;
-  }
+/*
+.price__radio--first:checked ~ .price__inner .price__list {
+  transform: translateX(0);
 }
 
-/*.price__inner {
-  overflow: hidden;
+.price__radio--second:checked ~ .price__inner .price__list {
+  transform: translateX(-260px);
+}
+
+.price__radio--third:checked ~ .price__inner .price__list {
+  transform: translateX(-520px);
 }
 */
 
+.price__inner {
+  overflow: hidden;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+
 .price__list {
-  /*position: relative;
-  left: -300px;
-  transform: translateX(-50%);*/
+  width: 840px;
   border-collapse: collapse;
-  border: 2px solid red;
+
+  transform: translateX(-260px);
+}
+
+.price__item--empty {
+  display: none;
 }
 
 .price__item {
+  box-sizing: border-box;
+
+  width: 280px;
+  padding: 16px 22px;
   line-height: 30px;
 
   text-transform: uppercase;
+
+  border: 2px solid #eeeeee;
 }
 
 .price__item--head {
+  color: #ffffff;
   background-color: #283645;
   text-align: center;
 }
@@ -84,23 +98,84 @@
   font-weight: 700;
 }
 
+.price__item-price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
 .price__visible {
   display: block;
 }
 
 @media (min-width: @tablet-width) {
-  .price__container {
+  .price__inner {
+    overflow: visible;
+
     width: 620px;
 
     margin: 0 auto;
     padding: 0 20px;
+
+    outline: 2px solid red;
+  }
+
+  .price__list {
+    width: 620px;
+
+    transform: translateX(0);
+  }
+
+  .price__item--empty {
+    display: block;
+  }
+
+  .price__item {
+    width: 155px;
+
+    padding: 11px 15px;
+
+    text-transform: none;
+  }
+
+  .price__item--head {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  .price__item-title {
+    font-size: 16px;
+  }
+
+  .price__item-price {
+    font-size: 18px;
+  }
+
+  .price__control {
+    display: none;
+  }
+
+  .price__visible {
+    display: none;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .price__container {
+@media (min-width: @desktop-width) {
+  .price__inner {
     width: 940px;
 
     padding: 0 10px;
+  }
+
+  .price__list {
+    width: 940px;
+  }
+
+  .price__item {
+    width: 235px;
+
+    padding: 17px 24px;
+
+    font-size: 18px;
   }
 }

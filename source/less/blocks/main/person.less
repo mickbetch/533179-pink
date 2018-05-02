@@ -34,3 +34,25 @@
     border: 2px solid #eeeeee;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .person {
+    padding: 0;
+  }
+
+  .person__item {
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 52px;
+
+    label {
+      margin: 0;
+      margin-right: 20px;
+    }
+
+    input {
+      flex-grow: 1;
+    }
+  }
+}
