@@ -10,11 +10,28 @@
 }
 
 .site-list__link {
+  display: block;
+  width: 100%;
+
+  padding-top: 22px;
+  padding-bottom: 20px;
+
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+
+  border-top: 1px solid #252e37;
+  border-bottom: 1px solid #000000;
+
+  &:hover {
+    color: rgb(210, 40, 86);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -23,5 +40,13 @@
     justify-content: space-between;
 
     width: 620px;
+  }
+}
+
+
+@media (max-width: @mobile-width-only) {
+
+  .main-nav--closed .site-list__item {
+    display: none;
   }
 }
