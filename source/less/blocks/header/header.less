@@ -14,15 +14,14 @@
   top: 21px;
 }
 
-@media (min-width: @tablet-width) {
-  .page-header___logo-link {
-    height: 110px;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .container--page-header {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .page-header___logo-link {
+    position: static;
+    margin-top: 26px;
   }
 }
