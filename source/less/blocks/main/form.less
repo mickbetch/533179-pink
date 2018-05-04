@@ -1,3 +1,141 @@
+.form__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 89px;
+
+  &:before {
+    content: "*";
+    position: absolute;
+
+    bottom: 24px;
+    left: 20%;
+
+    color: #d22856;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3.65%;
+  padding-left: 3.85%;
+}
+
+.form__group--name {
+  padding-bottom: 27px;
+}
+
+.form__input-wrapper {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+}
+
+.form__label {
+  position: relative;
+  padding-left: 67px;
+}
+
+.form__label--pink {
+  display: block;
+  padding-bottom: 5px;
+  padding-left: 23px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 65px 15px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+}
+
+.form__group--achieve {
+  background-color: #f2f2f2;
+}
+
+.form__group--border {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-style: none;
+}
+
+.form__title {
+  width: 225px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 36px;
+  padding-bottom: 43px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__checkbox,
+.form__radio {
+  display: none;
+}
+
+.form__label--checkbox {
+  display: block;
+
+  margin-bottom: 52px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__label--checkbox::before,
+.form__label--radio::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  width: 35px;
+  height: 35px;
+  transform: translateY(-50%);
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.form__label--checkbox:hover::before {
+    border-color: #283645;
+}
+
+.form__label--checkbox:active::before {
+    border-color: #d22856;
+}
+
+.form__checkbox:checked + .form__label--checkbox::after {
+  content: "";
+
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 6px;
+
+  width: 20px;
+  height: 8px;
+  transform: translateY(-80%) rotate(-45deg);
+  border: 2px solid #d22856;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+
+
+/*
 .form__emotions-item {
   margin: 0;
   padding: 0;
@@ -50,3 +188,4 @@
     margin: 0;
   }
 }
+*/
