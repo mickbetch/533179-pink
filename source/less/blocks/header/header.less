@@ -2,7 +2,7 @@
   position: relative;
   z-index: 100;
   margin-bottom: -66px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #1d2632;
 }
 
 .page-header__container {
@@ -63,6 +63,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    margin-bottom: -110px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header__logo-tablet {
     display: none;
   }
@@ -71,3 +77,4 @@
     display: block;
   }
 }
+
