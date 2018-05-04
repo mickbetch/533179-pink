@@ -1,19 +1,31 @@
-.form__container {
+.form {
   position: relative;
+}
 
+.form::before {
+  content: "*";
+  font-size: 14px;
+  line-height: 30px;
+  position: absolute;
+  bottom: 24px;
+  left: 20%;
+  color: #d22856;
+}
+
+.form::after {
+  content: "— обязательные поля";
+  font-size: 14px;
+  line-height: 30px;
+  position: absolute;
+  bottom: 24px;
+  left: 24%;
+  text-transform: uppercase;
+}
+
+.form__container {
   display: flex;
   flex-direction: column;
   padding-bottom: 89px;
-
-  &:before {
-    content: "*";
-    position: absolute;
-
-    bottom: 24px;
-    left: 20%;
-
-    color: #d22856;
-  }
 }
 
 .form__group {
@@ -133,8 +145,84 @@
   border-right-style: none;
 }
 
+.form__group--contact {
+  padding-top: 30px;
+  padding-bottom: 36px;
+}
 
+.form__group--app {
+  background-color: #f2f2f2;
+}
 
+.form__label--radio {
+  margin-bottom: 45px;
+}
+
+.form__label--radio::before {
+  border-radius: 50%;
+}
+
+.form__label--radio:hover::before {
+  border-color: #283645;;
+}
+
+.form__radio:checked + .form__label--radio::after {
+  content: "";
+
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 9px;
+
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.form__label--radio:active::before {
+    border-color: #d22856;
+}
+
+.form__title--emotions {
+  padding-top: 56px;
+  padding-bottom: 18px;
+}
+
+.form__textarea {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 201px;
+  margin-bottom: 47px;
+  padding: 20px 20px 17px;
+  resize: none;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  border: 2px solid #e5e5e5;
+}
+
+.form__button {
+  width: 280px;
+  margin: 0 auto;
+
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border-style: none;
+}
 /*
 .form__emotions-item {
   margin: 0;
