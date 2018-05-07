@@ -2,26 +2,6 @@
   position: relative;
 }
 
-.form::before {
-  content: "*";
-  font-size: 14px;
-  line-height: 30px;
-  position: absolute;
-  bottom: 24px;
-  left: 20%;
-  color: #d22856;
-}
-
-.form::after {
-  content: "— обязательные поля";
-  font-size: 14px;
-  line-height: 30px;
-  position: absolute;
-  bottom: 24px;
-  left: 24%;
-  text-transform: uppercase;
-}
-
 .form__container {
   display: flex;
   flex-direction: column;
@@ -207,10 +187,17 @@
 
   border: 2px solid #e5e5e5;
 }
+.form__button-group {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
 
 .form__button {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 36px;
 
   padding-top: 17px;
   padding-bottom: 16px;
@@ -227,17 +214,26 @@
   border-style: none;
 }
 
+.form__required {
+  line-height: 30px;
+  text-align: center;
+}
+
+.form__required--star {
+  display: inline-block;
+  color: #d22856;
+}
+
+.form__required--text {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.form__required--invisible {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
-  .form::before {
-    bottom: 65px;
-    left: 68.8%;
-  }
-
-  .form::after {
-    bottom: 65px;
-    left: 70.6%;
-  }
-
   .form__container {
     max-width: 620px;
 
@@ -368,28 +364,25 @@
     order: 5;
   }
 
+  .form__button-group {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+
+    padding-top: 67px;
+  }
+
   .form__button {
     width: 300px;
 
     margin: 0;
-    margin-top: 67px;
-
-    order: 6;
   }
+
 }
 
 @media (min-width: @desktop-width) {
-  .form::before {
-    bottom: 15px;
-    left: 63%;
-  }
-
-  .form::after {
-    content: "— обязательные для заполнения поля";
-    bottom: 15px;
-    left: 64%;
-  }
-
   .form__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -490,7 +483,8 @@
     margin-bottom: 43px;
   }
 
-  .form__button {
-    margin-top: 65px;
+  .form__button-group {
+    width: 940px;
+    padding-top: 65px;
   }
 }
