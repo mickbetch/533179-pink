@@ -5,14 +5,23 @@
   background-color: #f2f2f2;
 }
 
+.comment--panorama {
+  display: flex;
+  flex-direction: column;
+}
+
 .comment__author {
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .comment__time {
+  display: inline-block;
   font-size: 12px;
   font-weight: 300;
 }
+
 .comment__text {
   margin: 0;
   margin-bottom: 15px;
@@ -20,6 +29,7 @@
 }
 
 .comment__like {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 33px;
@@ -29,12 +39,48 @@
   text-transform: uppercase;
 }
 
+.comment__like::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 13px;
+  height: 12px;
+  transform: translateY(-50%);
+  background-image: url("../../../img/icon-heart.svg");
+}
+
 @media (min-width: @tablet-width) {
   .comment {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     padding: 25px 27px;
   }
 
+  .comment--panorama {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .comment__text--full {
+    order: 2;
+    flex-grow: 1;
+    margin: 0;
+  }
+
   .comment__like {
+    margin-top: auto;
     padding: 0;
+    padding-right: 33px;
+  }
+
+  .comment__like::before {
+    left: 228px;
+  }
+
+  .comment__like--full::before {
+    left: 106px;
   }
 }
