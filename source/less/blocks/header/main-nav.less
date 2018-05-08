@@ -51,6 +51,15 @@
   box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 -1px 0 #000000;
 }
 
+.main-nav__link:hover {
+  color: #d22856;
+}
+
+.main-nav__link:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     top: 44px;
@@ -83,6 +92,12 @@
 
   .main-nav__item--active {
     position: relative;
+  }
+
+  .main-nav__item--active:hover a,
+  .main-nav__item--active:active a {
+    color: #ffffff;
+    opacity: 1;
   }
 
   .main-nav__item--active::after {
