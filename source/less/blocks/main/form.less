@@ -227,6 +227,8 @@
 .form__required--text {
   display: inline-block;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .form__required--invisible {
@@ -411,42 +413,6 @@
     padding-bottom: 8px;
   }
 
-  .form__label--checkbox {
-    box-sizing: border-box;
-
-    &:nth-of-type(1) {
-      order: 1;
-      width: 260px;
-      margin-right: 5px;
-    }
-
-    &:nth-of-type(2) {
-      order: 4;
-      width: 260px;
-      margin-right: 5px;
-    }
-
-    &:nth-of-type(3) {
-      width: 245px;
-      order: 2;
-    }
-
-    &:nth-of-type(4) {
-      width: 245px;
-      order: 5;
-    }
-
-    &:nth-of-type(5) {
-      width: 210px;
-      order: 3;
-    }
-
-    &:nth-of-type(6) {
-      width: 210px;
-      order: 6;
-    }
-  }
-
   .form__group--contact {
     flex-direction: row;
     justify-content: space-between;
@@ -486,5 +452,9 @@
   .form__button-group {
     width: 940px;
     padding-top: 65px;
+  }
+
+  .form__required--invisible {
+    display: inline;
   }
 }
