@@ -45,6 +45,15 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.form__input:hover {
+  border-color: #283645;
+}
+
+.form__input:active {
+  border-color: #d22856;
 }
 
 .form__group--achieve {
@@ -101,7 +110,7 @@
 }
 
 .form__label--checkbox:hover::before {
-    border-color: #283645;
+  border-color: #283645;
 }
 
 .form__label--checkbox:active::before {
@@ -164,7 +173,7 @@
 }
 
 .form__label--radio:active::before {
-    border-color: #d22856;
+  border-color: #d22856;
 }
 
 .form__title--emotions {
@@ -180,12 +189,20 @@
   margin-bottom: 47px;
   padding: 20px 20px 17px;
   resize: none;
-
   font-size: 18px;
   line-height: 30px;
-
   border: 2px solid #e5e5e5;
+  outline: none;
 }
+
+.form__textarea:hover {
+  border-color: #283645;
+}
+
+.form__textarea:active {
+  border-color: #d22856;
+}
+
 .form__button-group {
   display: flex;
   flex-direction: column;
@@ -208,9 +225,23 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-
   background-color: #2aab6d;
   border-style: none;
+  border-radius: 3px;
+}
+
+.form__button:hover {
+  background-color: #1c9b5e;
+}
+
+.form__button:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button:disabled {
+  background-color: #e5e5e5;
+  color: rgb(255, 255, 255);
 }
 
 .form__required {
