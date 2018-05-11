@@ -1,11 +1,15 @@
+.advantages {
+  padding-top: 39px;
+}
+
 .advantages__header {
-  padding-top: 43px;
+  padding-bottom: 31px;
 }
 
 .advantages__about {
   width: 205px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   text-align: center;
 
   font-size: 24px;
@@ -13,8 +17,26 @@
   font-weight: 300;
 }
 
+.advantages__about--second {
+  margin-bottom: 0;
+}
+
 .advantages__wrapper {
+  position: relative;
+  padding-top: 80px;
+}
+
+.advantages__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-color: #f2f2f2;
+  background-image: url("../../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 0;
 }
 
 .advantages__list {
@@ -22,7 +44,6 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-top: 82px;
   list-style: none;
 }
 
@@ -84,8 +105,6 @@
   .advantages__container {
     width: 620px;
     margin: 0 auto;
-
-    outline: 2px solid red;
   }
 
   .advantages__list {
