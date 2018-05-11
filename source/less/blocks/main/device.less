@@ -5,14 +5,15 @@
   content: "";
   display: block;
   height: 395px;
-  background-image: url("../../../img/iphone-hand-mobile@1x.png"), url("../../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 40% bottom, center -66px;
   background-size: auto, cover;
 
   @media (min-resolution: @retina-dpi),
   (min-resolution: @retina-dppx) {
-    background-image: url("../../../img/bg-back-mobile@2x.jpg"), url("../../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px auto, 700px auto;
   }
 }
 
@@ -70,11 +71,18 @@
 
 @media (min-width: @tablet-width) {
   .device {
-    background-image: url("../../../img/iphone-hand-tablet@1x.png"), url("../../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, center;
-    background-size: 600px, cover;
-}
+    background-position: right bottom, center -69px;
+
+    @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 700px auto, 1200px auto;
+    }
+  }
+
+
 
   .device::before {
     display: none;
@@ -119,13 +127,13 @@
 
 @media (min-width: @desktop-width) {
   .device {
-    background-image: url("../../../img/iphone-hand-desktop@1x.png"), url("../../../img/bg-back-desktop@1x.jpg");
-    background-position: right bottom, center;
-    background-size: auto, cover;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: right bottom, center top;
 
     @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
-      background-image: url("../../../img/iphone-hand-desktop@2x.png"), url("../../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1050px auto, 2560px auto;
     }
   }
 
