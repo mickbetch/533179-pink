@@ -1,7 +1,21 @@
 .price {
-  background-color: #f2f2f2;
-  padding-top: 90px;
+  position: relative;
+  padding-top: 132px;
   padding-bottom: 100px;
+}
+
+.price::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  width: 100%;
+  min-height: 482px;
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  z-index: 0;
 }
 
 .price__slider {
@@ -165,8 +179,13 @@
 
 @media (min-width: @tablet-width) {
   .price {
-    padding-top: 87px;
+    padding-top: 109px;
     padding-bottom: 70px;
+  }
+
+  .price::before {
+    top: 22px;
+    min-height: 383px;
   }
 
   .price__inner {
@@ -233,8 +252,13 @@
 
 @media (min-width: @desktop-width) {
   .price {
-    padding-top: 147px;
+    padding-top: 191px;
     padding-bottom: 95px;
+  }
+
+  .price::before {
+    top: 42px;
+    min-height: 530px;
   }
 
   .price__inner {

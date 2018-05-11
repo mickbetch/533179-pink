@@ -1,7 +1,7 @@
 .reviews  {
   position: relative;
   padding-top: 45px;
-  padding-bottom: 86px;
+  padding-bottom: 50px;
 }
 
 .reviews__slider {
@@ -15,7 +15,7 @@
 .reviews__slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 43px;
+  bottom: 0;
   z-index: 20;
 
   display: flex;
@@ -123,17 +123,13 @@
 @media (min-width: @tablet-width) {
   .reviews {
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 42px;
   }
 
   .reviews__item {
     flex-direction: column-reverse;
 
     width: 620px;
-  }
-
-  .reviews__slider-controls {
-    bottom: 22px;
   }
 
   .reviews__radio--first:checked ~ .reviews__inner .reviews__list {
@@ -170,7 +166,7 @@
 @media (min-width: @desktop-width) {
   .reviews {
     padding-top: 185px;
-    padding-bottom: 38px;
+    padding-bottom: 0;
   }
 
   .reviews::before {
