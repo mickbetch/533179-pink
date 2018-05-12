@@ -33,9 +33,9 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
-            <span></span>
+            <span class="visually-hidden">открыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -286,7 +286,7 @@
 
         </div>
         <p class="contacts__map">
-          <iframe src="https://yandex.by/map-widget/v1/-/CBqOuHEa8B" width="100%" height="100%"></iframe>
+          <iframe src="https://yandex.by/map-widget/v1/-/CBqO5Ax-lB" width="100%" height="100%"></iframe>
           <picture>
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
@@ -360,5 +360,39 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pageHeader = document.querySelector('.page-header');
+      var deviceBG = document.querySelector('.device');
+
+      navMain.classList.remove('main-nav--nojs');
+      pageHeader.classList.remove("page-header--full");
+      deviceBG.classList.remove('.device--short');
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+              if (pageHeader.classList.contains('page-header--full')) {
+                pageHeader.classList.remove('page-header--full');
+              }
+              else {
+                pageHeader.classList.add('page-header--full');
+              };
+              if (deviceBG.classList.contains('device--short')) {
+                deviceBG.classList.remove('device--short');
+              } else {
+                deviceBG.classList.add('device--short');
+              };
+
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+            pageHeader.classList.remove('page-header--full');
+            deviceBG.classList.remove('device--short');
+          }
+      });
+    </script>
   </body>
 </html>
