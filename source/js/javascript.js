@@ -6,8 +6,14 @@ var pageMainWrapper = document.querySelector('.page-main__wrapper');
 
 navMain.classList.remove('main-nav--nojs');
 pageHeader.classList.remove("page-header--full");
-deviceBG.classList.remove('device--short');
-pageMainWrapper.classList.remove('page-main__wrapper--short');
+
+if(deviceBG) {
+  deviceBG.classList.remove('.device--short');
+}
+
+if (pageMainWrapper) {
+  pageMainWrapper.classList.remove('.page-main__wrapper--short');
+}
 
 navToggle.addEventListener("click", function() {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -15,7 +21,7 @@ navToggle.addEventListener("click", function() {
     navMain.classList.add('main-nav--opened');
 
     if (pageHeader.classList.contains('page-header--full')) {
-      pageHeader.classList.remove('page-header--full');
+        pageHeader.classList.remove('page-header--full');
     }
     else {
       pageHeader.classList.add('page-header--full');
@@ -23,21 +29,23 @@ navToggle.addEventListener("click", function() {
 
     if (deviceBG.classList.contains('device--short')) {
       deviceBG.classList.remove('device--short');
-    } else {
+    }
+    else {
       deviceBG.classList.add('device--short');
     };
 
     if (pageMainWrapper.classList.contains('page-main__wrapper--short')) {
-      pageMainWrapper.classList.remove('page-main__wrapper--short');
-    } else {
-      pageMainWrapper.classList.add('page-main__wrapper--short');
-    };
+        pageMainWrapper.classList.remove('page-main__wrapper--short');
+      } else {
+        pageMainWrapper.classList.add('page-main__wrapper--short');
+      };
 
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    pageHeader.classList.remove('page-header--full');
-    deviceBG.classList.remove('device--short');
-    pageMainWrapper.classList.remove('page-main__wrapper--short');
-  }
-});
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+      pageHeader.classList.remove('page-header--full');
+      deviceBG.classList.remove('device--short');
+      pageMainWrapper.classList.remove('page-main__wrapper--short');
+    }
+  });
+</script>
