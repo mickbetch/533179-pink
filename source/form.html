@@ -35,9 +35,9 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
-            <span></span>
+            <span class="visually-hidden">открыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -244,6 +244,39 @@
         <button class="modal__button modal__button--failure" type="button">ок</button>
       </div>
     </div>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pageHeader = document.querySelector('.page-header');
+      var pageMainWrapper = document.querySelector('.page-main__wrapper');
 
+      navMain.classList.remove('main-nav--nojs');
+      pageHeader.classList.remove("page-header--full");
+      pageMainWrapper.classList.remove('.page-main__wrapper--short');
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+              if (pageHeader.classList.contains('page-header--full')) {
+                pageHeader.classList.remove('page-header--full');
+              }
+              else {
+                pageHeader.classList.add('page-header--full');
+              };
+              if (pageMainWrapper.classList.contains('page-main__wrapper--short')) {
+                pageMainWrapper.classList.remove('page-main__wrapper--short');
+              } else {
+                pageMainWrapper.classList.add('page-main__wrapper--short');
+              };
+
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+            pageHeader.classList.remove('page-header--full');
+            pageMainWrapper.classList.remove('page-main__wrapper--short');
+          }
+      });
+    </script>
   </body>
 </html>
