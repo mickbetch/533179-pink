@@ -9,7 +9,7 @@
   position: absolute;
   top: 42px;
   width: 100%;
-  min-height: 470px;
+  min-height: 465px;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -112,8 +112,9 @@
 .price__item--yes::after {
   content: "";
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%);
   width: 32px;
   height: 22px;
   background-image: url("../img/icon-yes.svg");
@@ -124,8 +125,9 @@
 .price__item--no::after {
   content: "";
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
   width: 27px;
   height: 27px;
   background-image: url("../img/icon-no.svg");
@@ -167,6 +169,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin-bottom: 2px;
 }
 
 .price__item-price {
