@@ -1,0 +1,58 @@
+.person {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
+
+  border: none;
+}
+
+.person__item {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+
+  label {
+    margin-left: 23px;
+    margin-bottom: 7px;
+  }
+
+  input {
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    border: 2px solid #eeeeee;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .person {
+    padding: 0;
+  }
+
+  .person__item {
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 52px;
+
+    label {
+      margin: 0;
+      margin-right: 20px;
+    }
+
+    input {
+      flex-grow: 1;
+    }
+  }
+}

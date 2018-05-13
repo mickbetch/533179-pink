@@ -1,9 +1,22 @@
 .device-list {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 205px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
 }
 
-.device-list__link {
-  text-decoration: none;
+@media (min-width: @tablet-width) {
+  .device-list {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .device-list {
+    margin-bottom: 45px;
+  }
 }

@@ -1,50 +1,21 @@
+@import "blocks/normalize.less";
+@import "blocks/scaffolding.less";
+@import "blocks/variables.less";
 @import "blocks/header/header.less";
-@import "blocks/header/site-list.less";
+@import "blocks/header/main-nav.less";
 @import "blocks/main/device.less";
 @import "blocks/main/device-list.less";
 @import "blocks/main/advantages.less";
-@import "blocks/main/advantages-list.less";
+@import "blocks/main/research.less";
 @import "blocks/main/reviews.less";
 @import "blocks/main/price.less";
-@import "blocks/footer/footer.less";
 @import "blocks/footer/contacts.less";
+@import "blocks/footer/footer.less";
 @import "blocks/main/main.less";
 @import "blocks/main/photos.less";
-@import "blocks/main/photo.less";
+@import "blocks/main/comment.less";
 @import "blocks/main/app.less";
 @import "blocks/main/contest.less";
 @import "blocks/main/form.less";
 @import "blocks/footer/social.less";
-
-body {
-  background: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283645;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "blocks/modal.less";

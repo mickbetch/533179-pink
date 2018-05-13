@@ -1,5 +1,45 @@
+.contest {
+  padding-top: 46px;
+  padding-bottom: 15px;
+}
+
 .contest__text {
   margin: 0;
+  margin-bottom: 41px;
   padding: 0;
+
   line-height: 30px;
+
+  text-align: center;
+
+  &--visible {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contest {
+    padding-top: 95px;
+    padding-bottom: 0;
+  }
+
+  .contest__text {
+    width: 500px;
+
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    font-size: 18px;
+
+    &--visible {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__text {
+    width: 770px;
+    margin-bottom: 80px;
+  }
 }

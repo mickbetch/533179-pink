@@ -1,0 +1,56 @@
+.phone {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 42px;
+
+  border: none;
+}
+
+.phone__title {
+  display: none;
+}
+
+.phone__item {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+
+  label {
+    margin-left: 23px;
+    margin-bottom: 7px;
+  }
+
+  input {
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    border: 2px solid #eeeeee;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .phone {
+    border: 2px solid #eeeeee;
+  }
+
+  .phone__title {
+    display: block;
+
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+}
